@@ -14,34 +14,19 @@ const Wondered = () => {
           DevDynasty
         </h3>
 
-        <div className="w-48 md:w-[220px] h-48 md:h-[220px] bg-white relative rounded-full md:align-center md:bottom-[-40px] md:right-[-290px] border-8 md:border-[20px] border-gray-100">
-          <Image
-            className="mx-auto w-10 md:w-20 relative -top-16 md:top-[-30px]"
-            width={100}
-            height={100}
-            src={Orange}
-            alt="/"
-          />
-          <Image
-            className="w-28 md:w-[120px] relative mx-auto md:top-[-10px] animate-oscillate"
-            width={100}
-            height={100}
-            src={Ghost}
-            alt="/"
-          />
-        </div>
-
-        <div className="p-6 md:p-24 text-center font-mono">
-          <h1 className="font-extrabold text-5xl md:text-7xl tracking-wide">
+        <Image className="w-16vw max-w-200px absolute top-15 left-0" src={"https://assets.website-files.com/5837424ae11409586f837994/61195ef16ada8678daf3f267_Group%2045.svg"} height={200} width={200} alt="image 1 "/>
+        <Image className="w-16vw max-w-250px absolute top-13 right-0" src={"https://assets.website-files.com/5837424ae11409586f837994/61195ed506c73c67adaf0a3d_Group%2044.svg"} alt="image 2" height={200} width={200}/>
+        <div className="p-6 md:p-14 text-center font-mono">
+          <h1 className="font-extrabold text-5xl md:text-8xl tracking-wide">
             A design agency <br /> with a twist
           </h1>
         </div>
 
-        <h2 className="text-xl md:text-2xl">Design subscriptions for everyone.</h2>
+        <h2 className="  text-xl md:text-2xl">Design subscriptions for everyone. Pause or cancel anytime.</h2>
         <div>
           <a
             href="#_"
-            className="inline-flex items-center justify-center m-3 md:m-6 py-4 md:py-10 px-6 md:px-12 font-bold text-xl tracking-wide text-white transition duration-200 bg-gray-900 rounded-lg hover:bg-gray-800 focus:shadow-outline focus:outline-none"
+            className="inline-flex items-center justify-center m-3 md:m-6 py-4 md:py-6 px-6 md:px-12 font-bold text-xl tracking-wide text-white transition duration-200 bg-gray-900 rounded-lg hover:bg-gray-800 focus:shadow-outline focus:outline-none"
           >
             See plans
           </a>
