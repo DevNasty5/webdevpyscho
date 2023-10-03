@@ -1,0 +1,123 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/components/style2.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 1s ease-in-out;
+  }
+  @keyframes revolve {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-revolve {
+    animation: revolve 10s linear infinite; 
+  }
+  
+
+  @keyframes translateOscillate {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  .animate-oscillate {
+    animation: translateOscillate 2s ease-in-out infinite alternate; 
+  }
+
+  @keyframes popUpSlide1 {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-5px) scale(1.1);
+    }
+  }
+  
+  @keyframes popUpSlide2 {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-5px) scale(1.1);
+    }
+  }
+  
+  @keyframes popUpSlide3 {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-5px) scale(1.1);
+    }
+  }
+  
+  @keyframes popUpSlide4 {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-5px) scale(1.1);
+    }
+  }
+  .animate-pop-up-slide1 {
+    animation: popUpSlide1 1.5s ease-in-out infinite alternate, grow 1s ease-in-out infinite alternate;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .animate-pop-up-slide2 {
+    animation: popUpSlide2 1.5s ease-in-out infinite alternate, grow 1s ease-in-out infinite alternate;
+    transition: transform 0.5s ease-in-out;
+    animation-delay: 0.25s; 
+  }
+  
+  .animate-pop-up-slide3 {
+    animation: popUpSlide3 1.5s ease-in-out infinite alternate, grow 1s ease-in-out infinite alternate;
+    transition: transform 0.5s ease-in-out;
+    animation-delay: 0.5s; 
+  }
+  
+  .animate-pop-up-slide4 {
+    animation: popUpSlide4 1.5s ease-in-out infinite alternate, grow 1s ease-in-out infinite alternate;
+    transition: transform 0.5s ease-in-out;
+    animation-delay: 0.75s; 
+  }  
+
+  .bg-blue-500 {
+    background-color: #3b82f6; 
+    width: 2px;
+  }
+  
+  @keyframes popAndScale {
+    0% {
+      transform: scale(1);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1.06);
+      opacity: 1;
+    }
+  }
+  .animate-pop-and-scale {
+    animation: popAndScale 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  
+  
+  

@@ -8,9 +8,11 @@ const Header = () => {
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2">
           <div className="mt-[10%]">
+            
             <h5 className="mb-2 font-semibold tracking-tight text-gray-900">
               Ahead App
             </h5>
+            
             <h1 className="font-bold sm:text-6xl text-4xl sm:w-[80%] w-[100%]">
               Master your life by mastering emotion
             </h1>

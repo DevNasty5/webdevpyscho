@@ -10,21 +10,23 @@ import Work from "./Work";
 import Footer from './Footer';
 import Vacancies from './Vacancies';
 import Wondered from './Wondered';
+import Card from './Card'
 
 const Homepage = () => {
   return (
     < >
-      <Navbar />
-      <Header/>
+      {/* <Navbar /> */}
+      {/* <Header/>
       <Text/>
       <HorizontalScrollCards/>
       <Ahead/>
-      <Timeline/>
+      <Timeline/> */}
       <Wondered/>
-      <Text2/>
-      <Work/>
-      <Vacancies/>
-      <Footer/>
+      <Card/>
+      {/* <Text2/>
+      <Work/> */}
+      {/* <Vacancies/> */}
+      {/* <Footer/> */}
     </>
   );
 }
