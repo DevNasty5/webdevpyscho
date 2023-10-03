@@ -31,7 +31,7 @@ const Vacancies = () => {
   return (
     <div className=" overflow-hidden block sm:w-full  py-12   pl-16 rounded-lg ">
       <div>
-        <h1 className="text-3xl tracking-wider font-bold">Open vacancies</h1>
+        <h1 className="text-3xl text-center tracking-wider font-bold">Apps, websites, logos & more.</h1>
       </div>
       <div className="flex flex-col sm:flex-row py-14 mr-12 sm:justify-between">
         <div
@@ -39,7 +39,7 @@ const Vacancies = () => {
           className={`mb-6 px-5 h-[200px] sm:w-[370px] w-[320px] rounded-2xl bg-orange-50 ${cardClass}`}
         >
           <div className="relative my-auto leading-loose mx-auto ">
-            <h1 className="text-lg py-6 font-semibold">Senior Full-Stack Developer</h1>
+            <h1 className="text-lg py-6 font-semibold">Website Development</h1>
             <ul>
               <li>• Full time position</li>
               <li>• Berlin or remote</li>
@@ -52,7 +52,7 @@ const Vacancies = () => {
           className={`mb-6 px-5 h-[200px] sm:w-[370px] w-[320px] rounded-2xl bg-orange-50 ${cardClass}`}
         >
           <div className="relative my-auto leading-loose mx-auto ">
-            <h1 className="text-[15px] py-6 font-semibold">Senior Designer</h1>
+            <h1 className="text-[15px] py-6 font-semibold">App Development</h1>
             <ul>
               <li>• Full time position</li>
               <li>• Berlin or remote</li>
@@ -65,7 +65,7 @@ const Vacancies = () => {
           className={`px-5 h-[200px] sm:w-[370px] w-[320px] rounded-2xl bg-orange-50 ${cardClass}`}
         >
           <div className="relative my-auto leading-loose mx-auto ">
-            <h1 className="text-lg py-6 font-semibold">Superstar Inturn</h1>
+            <h1 className="text-lg py-6 font-semibold">SEO enhancer</h1>
             <ul>
               <li>• Full time position</li>
               <li>• Berlin or remote</li>
