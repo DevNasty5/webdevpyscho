@@ -3,6 +3,8 @@ import Projects from './Projects';
 import RecentWork from './RecentWork';
 import Landing from './Landing';
 import Services from './Services'
+import Pricing from './Pricing';
+import Faq from './Faq';
 
 const Homepage = () => {
   return (
@@ -11,6 +13,8 @@ const Homepage = () => {
       <Services/>
       <Projects/>
       <RecentWork/>
+      <Pricing/>
+      <Faq/>
     </>
   );
 }
