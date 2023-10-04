@@ -14,7 +14,7 @@ const Homepage = () => {
       <Projects/>
       <RecentWork/>
       <Pricing/>
-      <Faq/>
+      {/* <Faq/> */}
     </>
   );
 }
