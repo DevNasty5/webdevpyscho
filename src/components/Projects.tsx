@@ -42,7 +42,7 @@ const HorizontalScrollCards = () => {
   }, []);
 
   return (
-    <div className="mt-[-30px] ml-4 mr-4 md:ml-48 md:mr-48">
+    <div className="mt-[-30px]">
       <div className="overflow-x-scroll md:overflow-hidden">
         <div className="flex flex-col md:flex-row md:space-x-4 p-4 w-screen" ref={sectionRef}>
           {cardData.map((card) => (
