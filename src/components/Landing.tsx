@@ -12,12 +12,12 @@ const Wondered = () => {
         </h3>
 
         <Image
-          className="w-16vw max-w-200px absolute top-15 left-0"
+          className="w-16vw max-w-200px absolute top-15 left-0 " 
           src={
             "https://assets.website-files.com/5837424ae11409586f837994/61195ef16ada8678daf3f267_Group%2045.svg"
           }
-          height={200}
-          width={200}
+          height={170}
+          width={170}
           alt="image 1 "
         />
         <Image
@@ -26,8 +26,8 @@ const Wondered = () => {
             "https://assets.website-files.com/5837424ae11409586f837994/61195ed506c73c67adaf0a3d_Group%2044.svg"
           }
           alt="image 2"
-          height={200}
-          width={200}
+          height={170}
+          width={170}
         />
         <div className="p-6 md:p-14 text-center font-mono">
           <h1 className="font-extrabold text-5xl md:text-8xl tracking-wide">
