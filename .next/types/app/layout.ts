@@ -1,4 +1,4 @@
-// File: C:\Users\likhith reddy\Downloads\webdevpyscho\app\layout.tsx
+// File: /media/z3ro/DATA/DevDynasty/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
