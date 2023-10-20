@@ -1,18 +1,19 @@
-
-
-export default Card
-
 import React from 'react'
+import Image from 'next/image';
+import interneticon from '../assets/interneticon.png' ;
+import './style2.css';
 
-export function Card() {
+
+const services = () => {
   return (
-    <div>
-        <h1 className="font-grifter text-center font-extrabold p-14 sm:text-5xl text-3xl tracking-wide ">
+    <div className="mt-24 bg-orange-50 overflow-hidden block sm:w-full w-[80vw] sm:py-12 py-4  sm:pl-16 rounded-lg shadow  hover:bg-orange-50">
+        <Image src={interneticon} className="h-25 w-25" alt="phone" />
+      <div>
+        <h1 className="font-grifter  text-center font-extrabold p-5 sm:text-5xl text-3xl tracking-wide ">
          Apps, websites, logos & more.
         </h1>
     
     <div className="mx-auto p-4  max-w-7xl px-4 lg:px-9" >
-        
       <div className="grid grid-cols-1 gap-y-12 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
         <div>
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-100">
@@ -98,5 +99,15 @@ export function Card() {
       </div>
     </div>
     </div>
-  )
+         
+   
+
+    </div>
+    
+
+    
+  );
+
 }
+
+export default services;

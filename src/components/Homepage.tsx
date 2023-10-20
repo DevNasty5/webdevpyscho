@@ -14,7 +14,7 @@ const Homepage = () => {
     <>
       <Landing/>
       <Services/>
-      <Whyus/>
+      {/* <Whyus/> */}
       <Projects/>
       <RecentWork/>
       <Pricing/>
