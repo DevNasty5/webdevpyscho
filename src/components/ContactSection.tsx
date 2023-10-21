@@ -7,7 +7,7 @@ const ContactSection = () => {
         <h2 className="text-3xl font-semibold mb-4 text-gray-100">Small Team with Large Impact</h2>
           <div className="text-xl text-gray-200">
             <p className="mb-4">
-            We are <span className="font-bold">"Best"</span> at what we do.
+            We are <span className="font-bold">Best</span> at what we do.
             </p>
             <p className="mt-4">
             We thrive on challenges, consistently delivering results that leave a lasting mark.
