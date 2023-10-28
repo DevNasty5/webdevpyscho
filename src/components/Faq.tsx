@@ -34,11 +34,11 @@ const Faq: React.FC = () => {
   return (
     <div>
       <section id='Faq' className="relative mx-auto max-w-7xl px-2 py-14 md:px-0">
-        <Image src={js} alt='js' className='absolute -top-40 -left-12'>
+        <Image src={js} alt='js' className='absolute -top-40 -left-12 hidden md:block'>
 
         </Image>
         <div>
-          <div className="mx-auto max-w-2xl lg:text-center">
+          <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
               FAQs
             </h2>
@@ -59,7 +59,7 @@ const Faq: React.FC = () => {
                   onClick={() => toggleExpansion(index)}
                 >
                   <div
-                    className={`question w-[60vw] flex text-lg font-semibold text-black ${
+                    className={`question md:w-[60vw] text-start flex text-lg font-semibold text-black ${
                       expandedItems.includes(index) ? 'expanded' : ''
                     }`}
                   >

@@ -6,14 +6,14 @@ import Icon from "../assets/Interneticon.svg"
 
 export function Card() {
   return (
-    <div className="bg-[#FFF7ED] h-full flex flex-col justify-center items-center p-12 m-20 rounded-lg my-40">
-      <Image src={Icon} alt="internet icon" className="absolute left-32 mb-72 -mt-14">
+    <div className="bg-[#FFF7ED] h-full flex flex-col justify-center items-center md:p-12 p-2 md:m-20  m-6 rounded-lg md:my-40 my-5 mb-14">
+      <Image src={Icon} alt="internet icon" className="absolute left-32 mb-72 -mt-14 hidden md:block">
 
       </Image>
       <div className="py-16">
 
       
-      <h1 className="font-grifter text-center font-extrabold p-14 sm:text-5xl text-3xl tracking-wide ">
+      <h1 className="font-grifter text-center font-extrabold md:p-14 p-6 sm:text-5xl text-3xl tracking-wide ">
         Apps, websites, logos & more.
       </h1>
 

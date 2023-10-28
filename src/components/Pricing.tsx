@@ -3,11 +3,11 @@ import "./style2.css";
 
 const Pricing = () => {
   return (
-    <div id="pricing" className="bg-[#E1EAF4] w-screen items-center justify-center overflow-x-hidden pb-28">
+    <div id="pricing" className="bg-[#E1EAF4] w-screen items-center justify-center overflow-x-hidden md:pb-28 pb-8">
       <section className="relative overflow-hidden py-10">
         <div className="relative mx-auto max-w-7xl px-4">
-          <div className="mx-auto mb-24 max-w-2xl text-center lg:max-w-5xl">
-            <h1 className="mb-8 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
+          <div className="mx-auto md:mb-24 mb-6 max-w-2xl text-center lg:max-w-5xl">
+            <h1 className="md:mb-8 mb-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
               Membership Level
             </h1>
             <p className="text-lg text-gray-500">We got what suits you best!</p>
