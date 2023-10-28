@@ -29,25 +29,26 @@ const Faq: React.FC = () => {
       answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?',
     },
     {
-        question: 'What is the difference between a free and paid account?',
-        answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?',
-      },
-      {
-        question: 'What is the difference between a free and paid account?',
-        answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?',
-      },
-      {
-        question: 'What is the difference between a free and paid account?',
-        answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?',
-      },
-      {
-        question: 'What is the difference between a free and paid account?',
-        answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?',
-      },
-      {
-        question: 'What is the difference between a free and paid account?',
-        answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?',
-      },
+      question: 'What is the difference between a free and paid account?',
+      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?',
+    },
+    {
+      question: 'What is the difference between a free and paid account?',
+      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?',
+    },
+    {
+      question: 'What is the difference between a free and paid account?',
+      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?',
+    },
+    {
+      question: 'What is the difference between a free and paid account?',
+      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?',
+    },
+    {
+      question: 'What is the difference between a free and paid account?',
+      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?',
+    }
+    
     // Add more FAQ items as needed
   ];
 
@@ -83,8 +84,7 @@ const Faq: React.FC = () => {
                       expandedItems.includes(index) ? 'expanded' : ''
                     }`}
                   >
-                    {item.question.replace(/"/g, "&quot;")}
-
+                    {item.question}
                   </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
