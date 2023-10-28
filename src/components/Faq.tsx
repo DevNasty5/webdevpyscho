@@ -83,7 +83,8 @@ const Faq: React.FC = () => {
                       expandedItems.includes(index) ? 'expanded' : ''
                     }`}
                   >
-                    {item.question}
+                    {item.question.replace(/"/g, "&quot;")}
+
                   </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
