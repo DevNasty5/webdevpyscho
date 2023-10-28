@@ -92,7 +92,8 @@ const Faq: React.FC = () => {
             ))}
           </div>
           <p className="textbase mt-6 text-center text-gray-600">
-            Can't find what you're looking for?{' '}
+          Can&apos;t find what you&apos;re looking for?{' '}
+
             <a href="#" title="" className="font-semibold text-black hover:underline">
               Contact our support
             </a>
