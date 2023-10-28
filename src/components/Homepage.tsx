@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Whyus from './Text2';
 import ContactSection from './ContactSection'
 import Navbar from './Navbar';
+import Faq from './Faq';
 
  
 
@@ -20,7 +21,7 @@ const Homepage = () => {
       <Services/>
       <RecentWork/>
       <Pricing/>
-      {/* <Faq/> */}
+      <Faq/>
       <Footer/>
      
       
