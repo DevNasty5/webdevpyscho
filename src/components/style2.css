@@ -115,11 +115,7 @@
     animation: popAndScale 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   }
-  .pricing{
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,153,233,1) 100%);
-  }  
-    
+
     
     
   

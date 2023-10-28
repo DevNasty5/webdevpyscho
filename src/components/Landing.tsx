@@ -1,54 +1,32 @@
 import React from "react";
 import Image from "next/image";
+import Phone from "../assets/header.svg";
 
-import "./style2.css";
-
-const Wondered = () => {
+const Landing = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-orange-100 flex flex-col justify-center items-center p-6 md:pl-16 rounded-lg shadow">
-      <div className="mx-auto text-center">
-        <h3 className="mb-4 text-2xl font-bold tracking-wide text-gray-900">
-          DevDynasty
-        </h3>
+    <div className="bg-[#eeebfe] h-full flex justify-center items-center p-10 m-16 rounded-lg shadow hover:bg-gray-100">
+      <div className="flex flex-col items-center p-10">
 
-        <Image
-          className="w-16vw max-w-200px absolute top-15 left-0 " 
-          src={
-            "https://assets.website-files.com/5837424ae11409586f837994/61195ef16ada8678daf3f267_Group%2045.svg"
-          }
-          height={170}
-          width={170}
-          alt="image 1 "
-        />
-        <Image
-          className="w-16vw max-w-250px absolute top-13 right-0"
-          src={
-            "https://assets.website-files.com/5837424ae11409586f837994/61195ed506c73c67adaf0a3d_Group%2044.svg"
-          }
-          alt="image 2"
-          height={170}
-          width={170}
-        />
-        <div className="p-6 md:p-14 text-center font-mono">
-          <h1 className="font-extrabold text-5xl md:text-8xl tracking-wide">
-            A design agency <br /> with a twist
-          </h1>
+      
+      <h1 className="font-semibold  text-2xl"> DevDynasty</h1>
+      <div className="flex md:flex-row flex-col mt-12 justify-between">
+        <div className="font-extrabold text-[60px] leading-[96px]">
+          <h2 className="w-1/2">A Dev Agency with a twist</h2>
+        </div>
+        <div className="flex justify-center items-center">
+          <Image src={Phone} alt="header Image">
+
+          </Image>
         </div>
 
-        <h2 className="  text-xl md:text-2xl">
-          Design subscriptions for everyone. Pause or cancel anytime.
-        </h2>
-        <div>
-          <a
-            href="#_"
-            className="inline-flex items-center justify-center m-3 md:m-6 py-4 md:py-6 px-6 md:px-12 font-bold text-xl tracking-wide text-white transition duration-200 bg-gray-900 rounded-lg hover:bg-gray-800 focus:shadow-outline focus:outline-none"
-          >
-            See plans
-          </a>
-        </div>
+      </div>
+      <div className="flex flex-col justify-center items-center mt-6">
+        <h2>Design subscriptions for everyone. Pause or cancel anytime.</h2>
+        <button className="bg-[#111827] rounded-lg border-white text-white px-10 py-4 font-medium mt-4 hover:-translate-y-2 hover:shadow-4xl duration-300">See Plans</button>
+      </div>
       </div>
     </div>
   );
 };
 
-export default Wondered;
+export default Landing;

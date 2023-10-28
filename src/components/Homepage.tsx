@@ -7,19 +7,22 @@ import Pricing from './Pricing';
 import Footer from './Footer';
 import Whyus from './Text2';
 import ContactSection from './ContactSection'
+import Navbar from './Navbar';
+import Faq from "./Faq";
  
 
 const Homepage = () => {
   return (
     <>
+      <Navbar/>
       <Landing/>
-      <Services/>
-      <Whyus/>
       <Projects/>
+      <Services/>
       <RecentWork/>
       <Pricing/>
+      <Faq/>
       <Footer/>
-      <ContactSection/>
+     
       
     </>
   );

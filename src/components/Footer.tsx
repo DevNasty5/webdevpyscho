@@ -1,9 +1,21 @@
 import React from 'react'
 import Image from 'next/image'
-import Logo from '../assets/logo.png'
+import Logo from '../assets/header.svg'
 export function Footer() {
   return (
-    <section className="relative overflow-hidden bg-white py-8">
+    <section className='bg-[#000000]'>
+       <div className='flex justify-center items-center p-20'>
+        <div className='flex flex-col justify-center items-center w-1/2'>
+          <h1 className='text-white text-4xl text-center font-thin '>See if DevDynasty is right for<br></br> you. (It totally is.)</h1>
+          <p className='text-white my-4 text-center'>
+          Get a guided tour through DevDynasty, and find out how you and <br></br>your team can change the way you source design, forever.
+          </p>
+          <button className='bg-[#000000] border-[white] rounded-2xl border-[1px] flex justify-center items-center py-8 mt-5 px-36 text-white hover:-translate-y-2 hover:shadow-4xl duration-300'>Get Started</button>
+        </div>
+       </div>
+
+ 
+    <div className="relative overflow-hidden bg-white py-8 pt-6">
       <div className="container relative z-10 mx-auto px-4">
         <div className="-m-8 flex flex-wrap items-center justify-between">
           <div className="w-auto p-8">
@@ -98,6 +110,7 @@ export function Footer() {
           </div>
         </div>
       </div>
+    </div>
     </section>
   )
 }
