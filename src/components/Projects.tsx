@@ -17,28 +17,32 @@ const HorizontalScrollCards = () => {
 
     const totalWidth = cardWidth * numCards;
 
-    const pin = gsap.fromTo(
-      sectionRef.current,
-      {
-        translateX: 0,
-      },
-      {
-        translateX: `-${totalWidth + cardWidth}px`,
-        ease: 'none',
-        duration: 5,
-        scrollTrigger: {
-          trigger: triggerRef.current,
-          start: 'bottom bottom',
-          end: `+=${totalWidth - window.innerWidth + cardWidth}px`,
-          scrub: 0.6,
+    // Check if the screen width is greater than a certain breakpoint
+    const isLargeScreen = window.innerWidth > 768; // You can adjust the breakpoint as needed
+
+    if (isLargeScreen) {
+      const pin = gsap.fromTo(
+        sectionRef.current,
+        {
+          x: 0,
         },
-      }
-    );
-    return () => {
-      {
+        {
+          x: `-${totalWidth + cardWidth}`,
+          ease: 'none',
+          duration: 10,
+          scrollTrigger: {
+            trigger: triggerRef.current,
+            start: 'bottom bottom',
+            end: `+=${totalWidth - window.innerWidth + cardWidth}`,
+            scrub: 0.6,
+          },
+        }
+      );
+
+      return () => {
         pin.kill();
-      }
-    };
+      };
+    }
   }, []);
 
   return (
@@ -46,13 +50,7 @@ const HorizontalScrollCards = () => {
       <div className="overflow-x-scroll md:overflow-hidden">
         <div className="flex flex-col md:flex-row md:space-x-4 p-4 w-screen" ref={sectionRef}>
           {cardData.map((card) => (
-            <Cards
-              key={card.id}
-              title={card.title}
-              description={card.description}
-              imageSrc={card.imageSrc.src}
-              color={card.color}
-            />
+            <Cards key={card.id} />
           ))}
         </div>
       </div>
