@@ -5,27 +5,23 @@ import Landing from './Landing';
 import Services from './Services'
 import Pricing from './Pricing';
 import Footer from './Footer';
-import Whyus from './Text2';
-import ContactSection from './ContactSection'
+import ContactSection from './ContactSection';
 import Navbar from './Navbar';
 import Faq from './Faq';
 
- 
 
-const Homepage = () => {
+const Homepage: React.FC = () => {
   return (
     <>
-      <Navbar/>
-      <Landing/>
-      <Projects/>
-      <Services/>
-      <RecentWork/>
-      <Pricing/>
-      <Faq/>
-      <ContactSection/>
-      <Footer/>
-     
-      
+      <Navbar />
+      <Landing />
+      <Projects />
+      <Services />
+      <RecentWork />
+      <Pricing />
+      <Faq />
+      <ContactSection />
+      <Footer />
     </>
   );
 }
