@@ -3,6 +3,10 @@ import Image from 'next/image';
 import Html from "../assets/html.svg"
 import Php from "../assets/php.svg"
 import Css from "../assets/css.svg"
+import pic1 from "../assets/RecentWork/1.png"
+import pic2 from "../assets/RecentWork/3.png"
+import pic3 from "../assets/RecentWork/4.png"
+import pic4 from "../assets/RecentWork/2.png"
 
 const RecentWork = () => {
   return (
@@ -14,33 +18,33 @@ const RecentWork = () => {
             View Recent Work
           </a>
         </div>
-          <Image src={Html} alt='html' className='absolute right-2 top-2 hidden md:block'>
+        <Image src={Html} alt='html' className='absolute right-2 top-2 hidden md:block'>
 
-          </Image>
-          <Image src={Php} alt='php' className='absolute left-3 top-14 hidden md:block'>
+        </Image>
+        <Image src={Php} alt='php' className='absolute left-3 top-14 hidden md:block'>
 
-          </Image>
-        
+        </Image>
+
 
         <div className="justify-center items-center grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 sm:gap-5 md:gap-7 md:py-8 md:px-16 md:my-10">
           {/* Card 1 */}
           <div className="bg-white shadow-md  md:max-w-none overflow-hidden">
-            <Image className='flex justify-center items-center w-full h-full object-cover' width={100} height={100} src="" alt='' />
+            <Image className='flex justify-center items-center w-full h-full object-cover' src={pic1} alt='' />
           </div>
           {/* Card 2 */}
           <div className="bg-white shadow-md  md:max-w-none overflow-hidden">
-            <Image className='w-full h-full object-cover' width={100} height={100} src="" alt='' />
+            <Image className='w-full h-full object-cover' src={pic2} alt='' />
           </div>
           <Image src={Css} alt='css' className='absolute left-6 hidden md:block'>
 
           </Image>
           {/* Card 3 */}
           <div className="bg-white shadow-md  md:max-w-none overflow-hidden">
-            <Image className='w-full h-full object-cover' width={100} height={100} src="" alt='' />
+            <Image className='w-full h-full object-cover' src={pic3} alt='' />
           </div>
           {/* Card 4 */}
           <div className="bg-white shadow-md  md:max-w-none overflow-hidden">
-            <Image className='w-full h-full object-cover' width={100} height={100} src="" alt='' />
+            <Image className='w-full h-full object-cover' src={pic4} alt='' />
           </div>
         </div>
       </div>
