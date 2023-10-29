@@ -1,39 +1,38 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
+import pic1 from "../assets/CardImages/1.png";
+import pic2 from "../assets/CardImages/2.png";
+import pic3 from "../assets/CardImages/3.png";
+import pic4 from "../assets/CardImages/4.png";
+import pic5 from "../assets/CardImages/5.png";
 
-interface CardProps {
-  title: string;
-  description: string;
-  imageSrc: string;
-  color: string;
-}
+const images = [pic1, pic2, pic3, pic4, pic5];
 
-const Cards: React.FC<CardProps> = ({ imageSrc, title, description, color }) => {
-  const [isHovered, setIsHovered] = useState(false);
+const Cards: React.FC = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-  const cardStyle = {
-    // backgroundColor: color,
-    transform: isHovered ? 'scale(125%)' : 'scale(100%)',
+  const cardStyle = (index: number) => ({
+    transform: hoveredIndex === index ? 'scale(1.15)' : 'scale(1)',
     transition: 'transform 0.3s ease',
-  };
+  });
 
   return (
-    <div
-      className='justify-between sm:mt-28'
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <div
-        style={cardStyle}
-        className='block max-w-md sm:w-96 h-96 m-4 p-6 border border-gray-200 shadow hover:shadow-2xl place-self-center'
-      >
-        <div className='flex justify-center items-center'>
-        <Image className='h-16 w-16 ' width={100} height={100} src={imageSrc} alt='Emoji' />
-      </div>
-      </div>
+    <div className='flex sm:mt-28'>
+      {images.map((src, index) => (
+        <div
+          key={index}
+          className='max-w-md sm:w-96 h-96 m-4 p-2 hover:shadow-4xl place-self-center'
+          onMouseEnter={() => setHoveredIndex(index)}
+          onMouseLeave={() => setHoveredIndex(null)}
+        >
+          <div className='flex justify-center items-center' style={cardStyle(index)}>
+            <Image src={src} alt='Emoji' />
+          </div>
+        </div>
+      ))}
     </div>
   );
-};
+}
 
 export default Cards;

@@ -9,16 +9,16 @@ const Navbar = () => {
             <a href='#pricing'>Benefits</a>
           </li>
           <li className='text-white px-2 py-4  cursor-pointer rounded-2xl transition duration-300 hover:bg-white hover:px-2 hover:py-4 hover:text-black '>
-           <a href='#Rw'>Recent Work</a> 
+            <a href='#Rw'>Recent Work</a>
           </li>
           <li className='text-white px-2 py-4  cursor-pointer transition duration-300 hover:bg-white hover:px-2 hover:py-4 hover:text-black hover:rounded-full'>
-           <a href='#pricing'>Pricing</a> 
+            <a href='#pricing'>Pricing</a>
           </li>
           <li className='text-white px-2 py-4  cursor-pointer transition duration-300 hover:bg-white hover:px-2 hover:py-4 hover:text-black hover:rounded-full'>
             <a href='#Faq'>FAQs</a>
           </li>
           <li className='text-white px-2 py-4  cursor-pointer transition duration-300 hover:bg-white hover:px-2 hover:py-4 hover:text-black hover:rounded-full'>
-            Contact Us
+            <a href='#ContactUs'>Contact Us</a>
           </li>
         </ul>
       </div>
