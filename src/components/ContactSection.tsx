@@ -71,12 +71,13 @@ const ContactSection: React.FC = () => {
             );
     };
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setFormdata({
-            ...formData,
-            [e.target.name]: e.target.value,
-        });
-    };
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      setFormdata({
+          ...formData,
+          [e.target.name]: e.target.value,
+      });
+  };
+  
 
     return (
         <section id="ContactUs" className="min-h-screen bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 md:m-16 md:p-10 mb-10 rounded-lg">
