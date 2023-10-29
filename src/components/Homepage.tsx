@@ -22,6 +22,7 @@ const Homepage = () => {
       <RecentWork/>
       <Pricing/>
       <Faq/>
+      <ContactSection/>
       <Footer/>
      
       
