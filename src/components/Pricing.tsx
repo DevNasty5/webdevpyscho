@@ -16,155 +16,67 @@ const Pricing = () => {
             <div className="flex flex-wrap items-center">
               <div className="w-full  lg:w-1/3">
                 <div className="mx-auto max-w-sm rounded-md border border-gray-200 bg-white pb-20 pl-5 pr-8 pt-6 lg:pb-8">
-                  <span className="mb-2 block text-sm font-semibold text-gray-400">
-                    Standard
+                  <span className="mb-2 block text-sm font-semibold text-gray-1200">
+                    Starter Package
                   </span>
                   <span className="flex items-end">
                     <span className="text-4xl font-extrabold leading-none">
-                      ₹399
+                      ₹50,000
                     </span>
 
                     <span className="text-sm font-semibold">/month</span>
                   </span>
-                  <span className=" block text-sm mt-2 text-gray-500">
-                    One request at a time, Pause or cancel anytime
+                  
+                    <span className=" block text-sm mt-2 text-gray-500">
+                    billed ₹5 Lakhs for 12 months (exc VAT)
                   </span>
 
                   <div className="mt-7 border-t border-gray-100 pt-5">
                     <ul className="mb-10">
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          No Discount
+                        <span className="ml-2 text-sm  text-black">
+                          Upto 3 Pauses
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Basic Support
+                        <span className="ml-2 text-sm text-black">
+                         Single request at a time
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Ads Banner Free
+                        <span className="ml-2 text-sm text-black">
+                          Enhanced Support
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Design Style
+                        <span className="ml-2 text-sm text-black">
+                          Ad-Free Experience
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Component Library
+                        <span className="ml-2 text-sm text-black">
+                         Custom Design Styles
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          All limited links
+                        <span className="ml-2 text-sm text-black">
+                          Resource Repository Access
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Own analytics platform
+                        <span className="ml-2 text-sm text-black">
+                         Personalized Analytics Platform
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Chat support
+                        <span className="ml-2 text-sm text-black">
+                          Real-time Chat Support
                         </span>
                       </li>
-                      <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Optimize hashtags
-                        </span>
-                      </li>
-                      <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Unlimited users
-                        </span>
-                      </li>
+                     
                     </ul>
-                    <a
-                      href="#_"
-                      className="relative inline-block px-4 py-2 font-medium group"
-                    >
-                      <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-[#111827] group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                      <span className="absolute inset-0 w-full h-full bg-white border-2 border-[#111827] group-hover:bg-[#111827]"></span>
-                      <span className="relative text-black group-hover:text-white">
-                        Get Started
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="-mt-4 w-full lg:-mt-0 lg:w-1/3">
-                <div className="pt-22 relative mx-auto max-w-sm rounded-lg bg-[#111827] px-10 pb-16 ">
-                  <div className="absolute left-1/2 top-0 inline-flex -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-white p-2">
-                    <div className="flex-shrink-0 rounded-full bg-[#111827] px-5 py-4 text-sm font-semibold uppercase text-white">
-                      Most Popular
-                    </div>
-                  </div>
-                  <span className="mb-2 block pt-10 text-sm font-semibold text-white"></span>
-                  <span className="flex items-end text-white">
-                    <span className="text-4xl font-extrabold leading-none">
-                      Pay per use
-                    </span>
-                    {/* <span className="text-sm font-semibold">/month</span> */}
-                  </span>
-                  <div className="mt-7 border-t border-orange-500 pt-5">
-                    <ul className="mb-10">
-                      <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-white">
-                          No Discount
-                        </span>
-                      </li>
-                      <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-white">
-                          Basic Support
-                        </span>
-                      </li>
-                      <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-white">
-                          Ads Banner Free
-                        </span>
-                      </li>
-                      <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-white">
-                          Design Style
-                        </span>
-                      </li>
-                      <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-white">
-                          Component Library
-                        </span>
-                      </li>
-                      <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-white">
-                          All limited links
-                        </span>
-                      </li>
-                      <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-white">
-                          Own analytics platform
-                        </span>
-                      </li>
-                      <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-white">
-                          Chat support
-                        </span>
-                      </li>
-                      <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-white">
-                          Optimize hashtags
-                        </span>
-                      </li>
-                      <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-white">
-                          Unlimited users
-                        </span>
-                      </li>
-                    </ul>
-
-                    <a
+                      <div className="flex space-x-12">
+                   <a
                       href="#_"
                       className="relative inline-block px-4 py-2 font-medium group"
                     >
@@ -174,86 +86,134 @@ const Pricing = () => {
                         Get Started
                       </span>
                     </a>
+                    <a
+                      href="#_"
+                      className="relative inline-block px-4 py-2 font-medium group"
+                    >
+                      <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-white group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                      <span className="absolute inset-0 w-full h-full bg-[#111827] border-2 border-white group-hover:bg-white"></span>
+                      <span className="relative text-white group-hover:text-black">
+                        Book a call
+                      </span>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="-mt-4 w-full lg:-mt-0 lg:w-1/3">
+                <div className="pt-22 relative mx-auto max-w-sm rounded-lg bg-[#111827] px-10 pb-16 ">
+                  {/* <div className="absolute left-1/2 top-0 inline-flex -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-white p-2">
+                    <div className="flex-shrink-0 rounded-full bg-[#111827] px-5 py-4 text-sm font-semibold uppercase text-white">
+                      Most Popular
+                    </div>
+                  </div> */}
+                  {/* <span className="flex items-end text-white">
+                    <span className="text-4xl font-extrabold leading-none">
+                      Pay per use
+                    </span>
+                    <span className="text-sm font-semibold">/month</span>
+                  </span> */}
+                  <div className="mt-7 border-t border-orange-500 pt-5">
+
+                  <div className="flex flex-col space-y-10">
+  <a href="#_" className="relative inline-block px-4 py-2 font-medium group">
+    <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-white group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+    <span className="absolute inset-0 w-full h-full bg-[#111827] border-2 border-white group-hover:bg-white"></span>
+    <span className="relative text-white group-hover:text-black">Refer a friend & earn</span>
+  </a>
+  <a href="#_" className="relative inline-block px-4 py-2 font-medium group">
+    <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-white group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+    <span className="absolute inset-0 w-full h-full bg-[#111827] border-2 border-white group-hover:bg-white"></span>
+    <span className="relative text-white group-hover:text-black">Book a call</span>
+  </a>
+</div>
+
+
                   </div>
                 </div>
               </div>
               <div className="-mt-4 w-full lg:-ml-2 lg:-mt-0 lg:w-1/3 ">
                 <div className=" rounded-md mx-auto max-w-sm border border-gray-200 bg-white pb-8 pl-8 pr-5 pt-12 lg:rounded-b-none lg:pt-6">
-                  <span className="mb-2 block text-sm font-semibold text-gray-400">
-                    PRO
+                  <span className="mb-2 block text-sm font-semibold text-gray-1200">
+                    Founder's Package
                   </span>
                   <span className="flex items-end">
                     <span className="text-4xl font-extrabold leading-none">
-                      ₹1299
+                      ₹1,50,000
                     </span>
                     <span className="text-sm font-semibold">/month</span>
+                    
                   </span>
-                  <span className=" block text-sm mt-2 text-gray-500">
-                    Double the request, Pause or cancel anytime
+                    <span className=" block text-sm mt-2 text-gray-500">
+                    billed ₹15 Lakhs for 12 months (exc VAT)
                   </span>
+                  
                   <div className="mt-7 border-t border-gray-100 pt-5">
-                    <ul className="mb-10">
+                     <ul className="mb-10">
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          No Discount
+                        <span className="ml-2 text-sm font-semibold text-black">
+                          Unlimited Number of Pause
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Basic Support
+                        <span className="ml-2 text-sm text-black">
+                         Upto 5 requests at a time
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Ads Banner Free
+                        <span className="ml-2 text-sm text-black">
+                          Enhanced Support
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Design Style
+                        <span className="ml-2 text-sm text-black">
+                          Ad-Free Experience
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Component Library
+                        <span className="ml-2 text-sm text-black">
+                         Custom Design Styles
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          All limited links
+                        <span className="ml-2 text-sm text-black">
+                          Resource Repository Access
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Own analytics platform
+                        <span className="ml-2 text-sm text-black">
+                         Personalized Analytics Platform
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Chat support
+                        <span className="ml-2 text-sm text-black">
+                          Real-time Chat Support
                         </span>
                       </li>
-                      <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Optimize hashtags
-                        </span>
-                      </li>
-                      <li className="mb-6 flex items-center">
-                        <span className="ml-2 text-sm text-gray-900">
-                          Unlimited users
-                        </span>
-                      </li>
+                     
                     </ul>
+                     <div className="flex space-x-12">
+                   <a
+                      href="#_"
+                      className="relative inline-block px-4 py-2 font-medium group"
+                    >
+                      <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-white group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                      <span className="absolute inset-0 w-full h-full bg-[#111827] border-2 border-white group-hover:bg-white"></span>
+                      <span className="relative text-white group-hover:text-black">
+                        Get Started
+                      </span>
+                    </a>
                     <a
                       href="#_"
                       className="relative inline-block px-4 py-2 font-medium group"
                     >
-                      <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-[#111827] group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                      <span className="absolute inset-0 w-full h-full bg-white border-2 border-[#111827] group-hover:bg-[#111827]"></span>
-                      <span className="relative text-black group-hover:text-white">
-                        Get Started
+                      <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-white group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                      <span className="absolute inset-0 w-full h-full bg-[#111827] border-2 border-white group-hover:bg-white"></span>
+                      <span className="relative text-white group-hover:text-black">
+                        Book a call
                       </span>
                     </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -273,7 +233,7 @@ const Pricing = () => {
                 </span>
               </span>
               <span className="text-white mt-5 text-center">
-                Get free SEO optimization and website optimization for 3 months
+                Get free SEO optimization and website optimization for 2 duration.
               </span>
             </div>
           </div>

@@ -14,7 +14,7 @@ export function Card() {
 
       
       <h1 className="font-grifter text-center font-extrabold md:p-14 p-6 sm:text-5xl text-3xl tracking-wide ">
-        Apps, websites, logos & more.
+       Elevate Your Digital Presence!
       </h1>
 
       <div className="mx-auto p-4  max-w-7xl px-4 lg:px-9">
@@ -33,11 +33,10 @@ export function Card() {
               </svg>
             </div>
             <h3 className="mt-8 text-lg font-semibold text-black">
-              Web Development
+              Web Solutions
             </h3>
             <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+            Transform your vision into a dynamic web presence with our team of developers. We craft websites that exceed your expectations, and here's the twist – start with a one-month commitment. If you ever need a break or have other priorities, you can pause. Your project, your schedule.
             </p>
           </div>
           <div>
@@ -61,11 +60,10 @@ export function Card() {
               App Development
             </h3>
             <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+              Elevate your mobile presence with custom apps created by our expert team. The best part is, the power is in your hands. Try our services for a month, and if you need to focus on other aspects of your business, you can pause your app development until you're ready to resume.
             </p>
           </div>
-          <div>
+          {/* <div>
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-green-100">
               <svg
                 className="h-9 w-9 text-green-600"
@@ -87,7 +85,7 @@ export function Card() {
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
-          </div>
+          </div> */}
           <div>
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-red-100">
               <svg
@@ -107,8 +105,7 @@ export function Card() {
             </div>
             <h3 className="mt-8 text-lg font-semibold text-black">AI/ML</h3>
             <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+              Leverage the potential of AI and ML to gain insights and stay ahead of the competition. The twist here is that you're not locked into long-term commitments. Test our AI/ML services for a month, and if you need to pause for any reason, it's your call.
             </p>
           </div>
         </div>

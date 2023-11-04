@@ -6,10 +6,10 @@ const Navbar = () => {
       <div className='w-[45%] rounded-full h-[70px] bg-black hidden md:block'>
         <ul className='flex justify-evenly items-center h-full'>
           <li className='text-white px-2 py-4 cursor-pointer transition duration-300 hover:bg-white hover:px-2 hover:py-4 hover:text-black hover:rounded-full'>
-            <a href='#pricing'>Benefits</a>
+            <a href='#pricing'>Why Us?</a>
           </li>
           <li className='text-white px-2 py-4  cursor-pointer rounded-2xl transition duration-300 hover:bg-white hover:px-2 hover:py-4 hover:text-black '>
-            <a href='#Rw'>Recent Work</a>
+            <a href='#Rw'>Our Portfolio</a>
           </li>
           <li className='text-white px-2 py-4  cursor-pointer transition duration-300 hover:bg-white hover:px-2 hover:py-4 hover:text-black hover:rounded-full'>
             <a href='#pricing'>Pricing</a>
@@ -18,7 +18,7 @@ const Navbar = () => {
             <a href='#Faq'>FAQs</a>
           </li>
           <li className='text-white px-2 py-4  cursor-pointer transition duration-300 hover:bg-white hover:px-2 hover:py-4 hover:text-black hover:rounded-full'>
-            <a href='#ContactUs'>Contact Us</a>
+            <a href='#ContactUs'>Get in Touch</a>
           </li>
         </ul>
       </div>

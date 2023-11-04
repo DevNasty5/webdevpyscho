@@ -6,9 +6,9 @@ export function Footer() {
     <section className='bg-[#000000]'>
        <div className='flex justify-center items-center p-20'>
         <div className='flex flex-col justify-center items-center md:w-1/2'>
-          <h1 className='text-white md:text-4xl text-2xl text-center font-thin '>See if DevDynasty is right for<br className='hidden md:block'></br> you. (It totally is.)</h1>
+          <h1 className='text-white md:text-4xl text-2xl text-center font-thin '>See if DevDynasty is right for you.<br className='hidden md:block'></br>(It Totally Is!)</h1>
           <p className='text-white my-4 text-center'>
-          Get a guided tour through DevDynasty, and find out how you and <br className='md:block hidden'></br>your team can change the way you source design, forever.
+          Get a guided tour through DevDynasty, and find out how you and <br className='md:block hidden'></br>your team can change the way you solve your business digital needs forever.
           </p>
           <button className='bg-[#000000] border-[white] rounded-2xl border-[1px] flex justify-center items-center md:py-8 mt-5 md:px-36 py-6 px-32 text-white hover:-translate-y-2 hover:shadow-4xl duration-300'>Get Started</button>
         </div>

@@ -1,16 +1,72 @@
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[5].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app\\layout.tsx","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* cyrillic-ext */
 @font-face {
-  font-family: '__Inter_Fallback_725fdb';
-  src: local("Arial");
-  ascent-override:90.20%;
-  descent-override:22.48%;
-  line-gap-override:0.00%;
-  size-adjust:107.40%;
-}@font-face {font-family: '__Inter_Fallback_Fallback_725fdb';src: local("Arial");ascent-override: 90.20%;descent-override: 22.48%;line-gap-override: 0.00%;size-adjust: 107.40%
-}.__className_725fdb {font-family: '__Inter_Fallback_725fdb', '__Inter_Fallback_Fallback_725fdb';font-style: normal
+  font-family: '__Inter_e66fe9';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/ec159349637c90ad-s.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
+/* cyrillic */
+@font-face {
+  font-family: '__Inter_e66fe9';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/513657b02c5c193f-s.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: '__Inter_e66fe9';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/fd4db3eb5472fc27-s.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: '__Inter_e66fe9';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/51ed15f9841b9f9d-s.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Inter_e66fe9';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/05a31a2ca4975f99-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Inter_e66fe9';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/d6b16ce4a6175f26-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Inter_e66fe9';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Inter_Fallback_e66fe9';src: local("Arial");ascent-override: 90.20%;descent-override: 22.48%;line-gap-override: 0.00%;size-adjust: 107.40%
+}.__className_e66fe9 {font-family: '__Inter_e66fe9', '__Inter_Fallback_e66fe9';font-style: normal
+}
+
 /*!***********************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./app/globals.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************/
@@ -606,9 +662,6 @@ video {
 .m-6 {
   margin: 1.5rem;
 }
-.m-2 {
-  margin: 0.5rem;
-}
 .-mx-1 {
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -731,9 +784,6 @@ video {
 .mt-\[-30px\] {
   margin-top: -30px;
 }
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
 .block {
   display: block;
 }
@@ -754,9 +804,6 @@ video {
 }
 .h-10 {
   height: 2.5rem;
-}
-.h-16 {
-  height: 4rem;
 }
 .h-20 {
   height: 5rem;
@@ -779,9 +826,6 @@ video {
 .h-9 {
   height: 2.25rem;
 }
-.h-96 {
-  height: 24rem;
-}
 .h-\[70px\] {
   height: 70px;
 }
@@ -793,9 +837,6 @@ video {
 }
 .w-10 {
   width: 2.5rem;
-}
-.w-16 {
-  width: 4rem;
 }
 .w-20 {
   width: 5rem;
@@ -895,9 +936,6 @@ video {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.flex-row {
-  flex-direction: row;
-}
 .flex-col {
   flex-direction: column;
 }
@@ -944,6 +982,21 @@ video {
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+.space-x-12 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(3rem * var(--tw-space-x-reverse));
+  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+}
 .place-self-center {
   place-self: center;
 }
@@ -988,11 +1041,11 @@ video {
 .border-\[1px\] {
   border-width: 1px;
 }
-.border-t {
-  border-top-width: 1px;
-}
 .border-r-4 {
   border-right-width: 4px;
+}
+.border-t {
+  border-top-width: 1px;
 }
 .border-\[\#111827\] {
   --tw-border-opacity: 1;
@@ -1070,6 +1123,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(220 252 231 / var(--tw-bg-opacity));
 }
+.bg-green-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
 .bg-orange-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 237 213 / var(--tw-bg-opacity));
@@ -1081,10 +1138,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-green-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -1135,9 +1188,6 @@ video {
 .p-8 {
   padding: 2rem;
 }
-.p-12 {
-  padding: 3rem;
-}
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1177,10 +1227,6 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-}
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 .py-14 {
   padding-top: 3.5rem;
@@ -1481,10 +1527,6 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
-.hover\:bg-blue-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1516,11 +1558,6 @@ video {
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
-.hover\:shadow-2xl:hover {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
 .focus\:border-blue-400:focus {
   --tw-border-opacity: 1;
   border-color: rgb(96 165 250 / var(--tw-border-opacity));
@@ -1538,15 +1575,8 @@ video {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(147 197 253 / var(--tw-ring-opacity));
 }
-.focus\:ring-blue-400:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(96 165 250 / var(--tw-ring-opacity));
-}
 .focus\:ring-opacity-40:focus {
   --tw-ring-opacity: 0.4;
-}
-.focus\:ring-opacity-50:focus {
-  --tw-ring-opacity: 0.5;
 }
 .group:hover .group-hover\:mb-32 {
   margin-bottom: 8rem;
@@ -1721,10 +1751,6 @@ video {
     margin: 5rem;
   }
 
-  .md\:m-12 {
-    margin: 3rem;
-  }
-
   .md\:my-10 {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -1765,6 +1791,10 @@ video {
 
   .md\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .md\:mt-24 {
+    margin-top: 6rem;
   }
 
   .md\:block {
@@ -1841,14 +1871,6 @@ video {
     padding: 6rem;
   }
 
-  .md\:p-8 {
-    padding: 2rem;
-  }
-
-  .md\:p-6 {
-    padding: 1.5rem;
-  }
-
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1906,12 +1928,32 @@ video {
     font-size: 60px;
   }
 
+  .md\:text-\[90px\] {
+    font-size: 90px;
+  }
+
+  .md\:text-\[30px\] {
+    font-size: 30px;
+  }
+
   .md\:font-extrabold {
     font-weight: 800;
   }
 
   .md\:leading-\[96px\] {
     line-height: 96px;
+  }
+
+  .md\:leading-\[126px\] {
+    line-height: 126px;
+  }
+
+  .md\:leading-\[76px\] {
+    line-height: 76px;
+  }
+
+  .md\:leading-\[46px\] {
+    line-height: 46px;
   }
 }
 @media (min-width: 1024px) {
