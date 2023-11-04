@@ -3,7 +3,10 @@ import "./style2.css";
 
 const Pricing = () => {
   return (
-    <div id="pricing" className="bg-[#E1EAF4] w-screen items-center justify-center overflow-x-hidden md:pb-28 pb-8">
+    <div
+      id="pricing"
+      className="bg-[#E1EAF4] w-screen items-center justify-center overflow-x-hidden md:pb-28 pb-8"
+    >
       <section className="relative overflow-hidden py-10">
         <div className="relative mx-auto max-w-7xl px-4">
           <div className="mx-auto md:mb-24 mb-6 max-w-2xl text-center lg:max-w-5xl">
@@ -26,8 +29,8 @@ const Pricing = () => {
 
                     <span className="text-sm font-semibold">/month</span>
                   </span>
-                  
-                    <span className=" block text-sm mt-2 text-gray-500">
+
+                  <span className=" block text-sm mt-2 text-gray-500">
                     billed ₹5 Lakhs for 12 months (exc VAT)
                   </span>
 
@@ -40,7 +43,7 @@ const Pricing = () => {
                       </li>
                       <li className="mb-6 flex items-center">
                         <span className="ml-2 text-sm text-black">
-                         Single request at a time
+                          Single request at a time
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
@@ -55,7 +58,7 @@ const Pricing = () => {
                       </li>
                       <li className="mb-6 flex items-center">
                         <span className="ml-2 text-sm text-black">
-                         Custom Design Styles
+                          Custom Design Styles
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
@@ -65,7 +68,7 @@ const Pricing = () => {
                       </li>
                       <li className="mb-6 flex items-center">
                         <span className="ml-2 text-sm text-black">
-                         Personalized Analytics Platform
+                          Personalized Analytics Platform
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
@@ -73,29 +76,28 @@ const Pricing = () => {
                           Real-time Chat Support
                         </span>
                       </li>
-                     
                     </ul>
-                      <div className="flex space-x-12">
-                   <a
-                      href="#_"
-                      className="relative inline-block px-4 py-2 font-medium group"
-                    >
-                      <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-white group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                      <span className="absolute inset-0 w-full h-full bg-[#111827] border-2 border-white group-hover:bg-white"></span>
-                      <span className="relative text-white group-hover:text-black">
-                        Get Started
-                      </span>
-                    </a>
-                    <a
-                      href="#_"
-                      className="relative inline-block px-4 py-2 font-medium group"
-                    >
-                      <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-white group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                      <span className="absolute inset-0 w-full h-full bg-[#111827] border-2 border-white group-hover:bg-white"></span>
-                      <span className="relative text-white group-hover:text-black">
-                        Book a call
-                      </span>
-                    </a>
+                    <div className="flex space-x-12">
+                      <a
+                        href="#_"
+                        className="relative inline-block px-4 py-2 font-medium group"
+                      >
+                        <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-[#111827] group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                        <span className="absolute inset-0 w-full h-full bg-white border-2 border-[#111827] group-hover:bg-[#111827]"></span>
+                        <span className="relative text-black group-hover:text-white">
+                          Get Started
+                        </span>
+                      </a>
+                      <a
+                        href="#_"
+                        className="relative inline-block px-4 py-2 font-medium group"
+                      >
+                       <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-[#111827] group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                        <span className="absolute inset-0 w-full h-full bg-white border-2 border-[#111827] group-hover:bg-[#111827]"></span>
+                        <span className="relative text-black group-hover:text-white">
+                          Book a call
+                        </span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -113,22 +115,48 @@ const Pricing = () => {
                     </span>
                     <span className="text-sm font-semibold">/month</span>
                   </span> */}
-                  <div className="mt-7 border-t border-orange-500 pt-5">
-
-                  <div className="flex flex-col space-y-10">
-  <a href="#_" className="relative inline-block px-4 py-2 font-medium group">
-    <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-white group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-    <span className="absolute inset-0 w-full h-full bg-[#111827] border-2 border-white group-hover:bg-white"></span>
-    <span className="relative text-white group-hover:text-black">Refer a friend & earn</span>
-  </a>
-  <a href="#_" className="relative inline-block px-4 py-2 font-medium group">
-    <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-white group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-    <span className="absolute inset-0 w-full h-full bg-[#111827] border-2 border-white group-hover:bg-white"></span>
-    <span className="relative text-white group-hover:text-black">Book a call</span>
-  </a>
-</div>
-
-
+                  <div className="pt-14 border-t border-orange-500 ">
+                    <div className="flex flex-col space-y-10">
+                      <a
+                        href="#_"
+                        className="relative inline-block px-4 py-2 font-medium group text-center"
+                      >
+                        <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-white group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                        <span className="absolute inset-0 w-full h-full bg-[#111827] border-2 border-white group-hover:bg-white"></span>
+                        <span className="relative text-white group-hover:text-black text-center">
+                          Refer a friend & earn
+                        </span>
+                      </a>
+                      <a
+                        href="#_"
+                        className="relative inline-block px-4 py-2 font-medium group text-center"
+                      >
+                        <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-white group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                        <span className="absolute inset-0 w-full h-full bg-[#111827] border-2 border-white group-hover:bg-white"></span>
+                        <span className="relative text-white group-hover:text-black text-center">
+                          Book a call
+                        </span>
+                      </a>
+                    </div>
+                    <div className="flex items-center justify-center h-96 bg-[#111827] flex-col mr-2 pt-14">
+                      <div>
+                        <span className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+                          <span className="w-48 h-48 rounded rotate-[-40deg] bg-[#3658C1] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                          <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+                            What else?
+                          </span>
+                        </span>
+                      </div>
+                      <span className="flex items-end text-white mt-4">
+                        <span className="text-4xl mt-3 font-extrabold leading-none">
+                          Web Solutions
+                        </span>
+                      </span>
+                      <span className="text-white mt-5 text-center">
+                        Get free SEO optimization and website optimization for 2
+                        duration.
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -142,14 +170,13 @@ const Pricing = () => {
                       ₹1,50,000
                     </span>
                     <span className="text-sm font-semibold">/month</span>
-                    
                   </span>
-                    <span className=" block text-sm mt-2 text-gray-500">
+                  <span className=" block text-sm mt-2 text-gray-500">
                     billed ₹15 Lakhs for 12 months (exc VAT)
                   </span>
-                  
+
                   <div className="mt-7 border-t border-gray-100 pt-5">
-                     <ul className="mb-10">
+                    <ul className="mb-10">
                       <li className="mb-6 flex items-center">
                         <span className="ml-2 text-sm font-semibold text-black">
                           Unlimited Number of Pause
@@ -157,7 +184,7 @@ const Pricing = () => {
                       </li>
                       <li className="mb-6 flex items-center">
                         <span className="ml-2 text-sm text-black">
-                         Upto 5 requests at a time
+                          Upto 5 requests at a time
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
@@ -172,7 +199,7 @@ const Pricing = () => {
                       </li>
                       <li className="mb-6 flex items-center">
                         <span className="ml-2 text-sm text-black">
-                         Custom Design Styles
+                          Custom Design Styles
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
@@ -182,7 +209,7 @@ const Pricing = () => {
                       </li>
                       <li className="mb-6 flex items-center">
                         <span className="ml-2 text-sm text-black">
-                         Personalized Analytics Platform
+                          Personalized Analytics Platform
                         </span>
                       </li>
                       <li className="mb-6 flex items-center">
@@ -190,51 +217,32 @@ const Pricing = () => {
                           Real-time Chat Support
                         </span>
                       </li>
-                     
                     </ul>
-                     <div className="flex space-x-12">
-                   <a
-                      href="#_"
-                      className="relative inline-block px-4 py-2 font-medium group"
-                    >
-                      <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-white group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                      <span className="absolute inset-0 w-full h-full bg-[#111827] border-2 border-white group-hover:bg-white"></span>
-                      <span className="relative text-white group-hover:text-black">
-                        Get Started
-                      </span>
-                    </a>
-                    <a
-                      href="#_"
-                      className="relative inline-block px-4 py-2 font-medium group"
-                    >
-                      <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-white group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                      <span className="absolute inset-0 w-full h-full bg-[#111827] border-2 border-white group-hover:bg-white"></span>
-                      <span className="relative text-white group-hover:text-black">
-                        Book a call
-                      </span>
-                    </a>
+                    <div className="flex space-x-12">
+                      <a
+                        href="#_"
+                        className="relative inline-block px-4 py-2 font-medium group"
+                      >
+                        <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-[#111827] group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                        <span className="absolute inset-0 w-full h-full bg-white border-2 border-[#111827] group-hover:bg-[#111827]"></span>
+                        <span className="relative text-black group-hover:text-white">
+                          Get Started
+                        </span>
+                      </a>
+                      <a
+                        href="#_"
+                        className="relative inline-block px-4 py-2 font-medium group"
+                      >
+                       <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-[#111827] group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                        <span className="absolute inset-0 w-full h-full bg-white border-2 border-[#111827] group-hover:bg-[#111827]"></span>
+                        <span className="relative text-black group-hover:text-white">
+                          Book a call
+                        </span>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="flex items-center justify-center h-56 bg-[#111827] flex-col mr-2">
-              <div>
-                <span className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
-                  <span className="w-48 h-48 rounded rotate-[-40deg] bg-[#3658C1] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                  <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
-                    What else?
-                  </span>
-                </span>
-              </div>
-              <span className="flex items-end text-white">
-                <span className="text-4xl mt-3 font-extrabold leading-none">
-                  Web Solutions
-                </span>
-              </span>
-              <span className="text-white mt-5 text-center">
-                Get free SEO optimization and website optimization for 2 duration.
-              </span>
             </div>
           </div>
         </div>

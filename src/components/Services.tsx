@@ -18,7 +18,7 @@ export function Card() {
       </h1>
 
       <div className="mx-auto p-4  max-w-7xl px-4 lg:px-9">
-        <div className="grid grid-cols-1 gap-y-12 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-y-12 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-3 ">
           <div>
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-100">
               <svg
