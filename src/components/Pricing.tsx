@@ -135,7 +135,7 @@ const Pricing = () => {
               <div className="-mt-4 w-full lg:-ml-2 lg:-mt-0 lg:w-1/3 ">
                 <div className=" rounded-md mx-auto max-w-sm border border-gray-200 bg-white pb-8 pl-8 pr-5 pt-12 lg:rounded-b-none lg:pt-6">
                   <span className="mb-2 block text-sm font-semibold text-gray-1200">
-                    Founder's Package
+                    Founder Package
                   </span>
                   <span className="flex items-end">
                     <span className="text-4xl font-extrabold leading-none">

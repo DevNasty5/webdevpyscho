@@ -36,7 +36,7 @@ export function Card() {
               Web Solutions
             </h3>
             <p className="mt-4 text-sm text-gray-600">
-            Transform your vision into a dynamic web presence with our team of developers. We craft websites that exceed your expectations, and here's the twist – start with a one-month commitment. If you ever need a break or have other priorities, you can pause. Your project, your schedule.
+            Transform your vision into a dynamic web presence with our team of developers. We craft websites that exceed your expectations, and here is the twist – start with a one-month commitment. If you ever need a break or have other priorities, you can pause. Your project, your schedule.
             </p>
           </div>
           <div>
@@ -60,7 +60,7 @@ export function Card() {
               App Development
             </h3>
             <p className="mt-4 text-sm text-gray-600">
-              Elevate your mobile presence with custom apps created by our expert team. The best part is, the power is in your hands. Try our services for a month, and if you need to focus on other aspects of your business, you can pause your app development until you're ready to resume.
+              Elevate your mobile presence with custom apps created by our expert team. The best part is, the power is in your hands. Try our services for a month, and if you need to focus on other aspects of your business, you can pause your app development until you are ready to resume.
             </p>
           </div>
           {/* <div>
@@ -105,7 +105,7 @@ export function Card() {
             </div>
             <h3 className="mt-8 text-lg font-semibold text-black">AI/ML</h3>
             <p className="mt-4 text-sm text-gray-600">
-              Leverage the potential of AI and ML to gain insights and stay ahead of the competition. The twist here is that you're not locked into long-term commitments. Test our AI/ML services for a month, and if you need to pause for any reason, it's your call.
+              Leverage the potential of AI and ML to gain insights and stay ahead of the competition. The twist here is that you are not locked into long-term commitments. Test our AI/ML services for a month, and if you need to pause for any reason, it is your call.
             </p>
           </div>
         </div>
