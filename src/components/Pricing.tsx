@@ -5,7 +5,7 @@ const Pricing = () => {
   return (
     <div
       id="pricing"
-      className="bg-[#E1EAF4] w-screen items-center justify-center overflow-x-hidden md:pb-28 pb-8"
+      className="bg-[#E1EAF4]  items-center justify-center  overflow-x-hidden md:pb-28 pb-8"
     >
       <section className="relative overflow-hidden py-10">
         <div className="relative mx-auto max-w-7xl px-4">
@@ -92,7 +92,7 @@ const Pricing = () => {
                         href="#_"
                         className="relative inline-block px-4 py-2 font-medium group"
                       >
-                       <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-[#111827] group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                        <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-[#111827] group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                         <span className="absolute inset-0 w-full h-full bg-white border-2 border-[#111827] group-hover:bg-[#111827]"></span>
                         <span className="relative text-black group-hover:text-white">
                           Book a call
@@ -233,7 +233,7 @@ const Pricing = () => {
                         href="#_"
                         className="relative inline-block px-4 py-2 font-medium group"
                       >
-                       <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-[#111827] group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                        <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-[#111827] group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                         <span className="absolute inset-0 w-full h-full bg-white border-2 border-[#111827] group-hover:bg-[#111827]"></span>
                         <span className="relative text-black group-hover:text-white">
                           Book a call
