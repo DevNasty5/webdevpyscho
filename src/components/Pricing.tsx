@@ -1,7 +1,40 @@
-import React from "react";
+'use client';
+import React, { useState } from "react";
 import "./style2.css";
 
-const Pricing = () => {
+interface PricingProps {
+  onContactSalesClick?: (packageType: string) => void;
+}
+
+const Pricing: React.FC<PricingProps> = (props) => {
+  const [selectedPackage, setSelectedPackage] = useState('');
+
+  const handleContactSalesClick = (packageType: string) => {
+    // Set the selected package in local state
+    setSelectedPackage(packageType);
+
+    // Invoke the onContactSalesClick prop with the selected package
+    if (props.onContactSalesClick) {
+      props.onContactSalesClick(selectedPackage);
+    }
+    // Assuming "ContactUs" is an element with an id
+    const contactUsElement = document.getElementById('ContactUs');
+
+    if (contactUsElement) {
+      // Scroll to the "ContactUs" section
+      contactUsElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  const handleBookCall = () => {
+    // Assuming "ContactUs" is an element with an id
+    const contactUsElement = document.getElementById('ContactUs');
+
+    if (contactUsElement) {
+      // Scroll to the "ContactUs" section
+      contactUsElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div
       id="pricing"
@@ -10,7 +43,7 @@ const Pricing = () => {
       <section className="relative overflow-hidden py-10">
         <div className="relative mx-auto max-w-7xl px-4">
           <div className="mx-auto md:mb-24 mb-6 max-w-2xl text-center lg:max-w-5xl">
-            <h1 className="md:mb-8 mb-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
+            <h1 className="md:mb-6 mb-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
               Membership Level
             </h1>
             <p className="text-lg text-gray-500">We got what suits you best!</p>
@@ -23,16 +56,27 @@ const Pricing = () => {
                     Starter Package
                   </span>
                   <span className="flex items-end">
-                    <span className="text-4xl font-extrabold leading-none">
+                    <a
+                      href="#CS"
+                      className="relative inline-block px-8 py-3 font-medium group"
+                      onClick={() => handleContactSalesClick("Starter Package")}
+                    >
+                      <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-[#111827] group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                      <span className="absolute inset-0 w-full h-full bg-white border-2 border-[#111827] group-hover:bg-[#111827]"></span>
+                      <span className="relative text-black text-xl group-hover:text-white">
+                        Contact Sales
+                      </span>
+                    </a>
+                    {/* <span className="text-4xl font-extrabold leading-none">
                       ₹50,000
                     </span>
 
-                    <span className="text-sm font-semibold">/month</span>
+                    <span className="text-sm font-semibold">/month</span> */}
                   </span>
 
-                  <span className=" block text-sm mt-2 text-gray-500">
+                  {/* <span className=" block text-sm mt-2 text-gray-500">
                     billed ₹5 Lakhs for 12 months (exc VAT)
-                  </span>
+                  </span> */}
 
                   <div className="mt-7 border-t border-gray-100 pt-5">
                     <ul className="mb-10">
@@ -77,7 +121,7 @@ const Pricing = () => {
                         </span>
                       </li>
                     </ul>
-                    <div className="flex space-x-12">
+                    {/* <div className="flex space-x-12">
                       <a
                         href="#_"
                         className="relative inline-block px-4 py-2 font-medium group"
@@ -98,7 +142,7 @@ const Pricing = () => {
                           Book a call
                         </span>
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -115,9 +159,9 @@ const Pricing = () => {
                     </span>
                     <span className="text-sm font-semibold">/month</span>
                   </span> */}
-                  <div className="pt-14 border-t border-orange-500 ">
+                  <div className="pt-20 border-t border-orange-500 ">
                     <div className="flex flex-col space-y-10">
-                      <a
+                      {/* <a
                         href="#_"
                         className="relative inline-block px-4 py-2 font-medium group text-center"
                       >
@@ -126,19 +170,20 @@ const Pricing = () => {
                         <span className="relative text-white group-hover:text-black text-center">
                           Refer a friend & earn
                         </span>
-                      </a>
+                      </a> */}
                       <a
-                        href="#_"
-                        className="relative inline-block px-4 py-2 font-medium group text-center"
+                        href="#CS"
+                        className="relative inline-block px-4 py-3 font-medium group text-center"
+                        onClick={handleBookCall}
                       >
                         <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-white group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                         <span className="absolute inset-0 w-full h-full bg-[#111827] border-2 border-white group-hover:bg-white"></span>
-                        <span className="relative text-white group-hover:text-black text-center">
+                        <span className="relative text-white text-xl group-hover:text-black text-center">
                           Book a call
                         </span>
                       </a>
                     </div>
-                    <div className="flex items-center justify-center h-96 bg-[#111827] flex-col mr-2 pt-14">
+                    <div className="flex items-center justify-center h-[26rem] bg-[#111827] flex-col mr-2 pt-14">
                       <div>
                         <span className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
                           <span className="w-48 h-48 rounded rotate-[-40deg] bg-[#3658C1] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
@@ -166,14 +211,25 @@ const Pricing = () => {
                     Founder Package
                   </span>
                   <span className="flex items-end">
-                    <span className="text-4xl font-extrabold leading-none">
+                    <a
+                      href="#CS"
+                      className="relative inline-block px-8 py-3 font-medium group"
+                      onClick={() => handleContactSalesClick("Founder Package")}
+                    >
+                      <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-[#111827] group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                      <span className="absolute inset-0 w-full h-full bg-white border-2 border-[#111827] group-hover:bg-[#111827]"></span>
+                      <span className="relative text-black text-xl group-hover:text-white">
+                        Contact Sales
+                      </span>
+                    </a>
+                    {/* <span className="text-4xl font-extrabold leading-none">
                       ₹1,50,000
                     </span>
-                    <span className="text-sm font-semibold">/month</span>
+                    <span className="text-sm font-semibold">/month</span> */}
                   </span>
-                  <span className=" block text-sm mt-2 text-gray-500">
+                  {/* <span className=" block text-sm mt-2 text-gray-500">
                     billed ₹15 Lakhs for 12 months (exc VAT)
-                  </span>
+                  </span> */}
 
                   <div className="mt-7 border-t border-gray-100 pt-5">
                     <ul className="mb-10">
@@ -218,7 +274,7 @@ const Pricing = () => {
                         </span>
                       </li>
                     </ul>
-                    <div className="flex space-x-12">
+                    {/* <div className="flex space-x-12">
                       <a
                         href="#_"
                         className="relative inline-block px-4 py-2 font-medium group"
@@ -239,7 +295,7 @@ const Pricing = () => {
                           Book a call
                         </span>
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

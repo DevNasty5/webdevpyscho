@@ -13,7 +13,8 @@ const contactConfig = {
     YOUR_TEMPLATE_ID: "template_dolm7jz",
     YOUR_USER_ID: "olHQTTcsNsAC5pyPS",
 };
-const ContactSection: React.FC = () => {
+const ContactSection: React.FC<{ starterPackage: string }> = (props) => {
+
     const [formData, setFormdata] = useState({
         name: "",
         email: "",
@@ -29,11 +30,17 @@ const ContactSection: React.FC = () => {
         e.preventDefault();
         setFormdata({ ...formData, loading: true });
 
+        let messageContent = formData.message;
+        if (props.starterPackage) {
+            // If the starterPackage prop is available, include it in the message
+            messageContent += `\n\nSelected Package Type: ${props.starterPackage}`;
+        }
+
         const templateParams = {
             email: formData.email,
             user_name: formData.name,
             to_name: contactConfig.YOUR_EMAIL,
-            message: formData.message,
+            message: messageContent,
             phoneNumber: formData.phoneNumber,
         };
 
@@ -72,12 +79,12 @@ const ContactSection: React.FC = () => {
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      setFormdata({
-          ...formData,
-          [e.target.name]: e.target.value,
-      });
-  };
-  
+        setFormdata({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
+    };
+
 
     return (
         <section id="ContactUs" className="min-h-screen bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 md:m-16 md:p-10 mb-10 rounded-lg">
@@ -126,10 +133,9 @@ const ContactSection: React.FC = () => {
                             <Alert
                                 // show={formData.show}
                                 variant={formData.variant}
-                                className={`rounded-0 p-4 mb-10 border-r-4 co_alert ${formData.show ? "d-block bg-green-600" : "d-none"
+                                className={`rounded-0 p-4 mb-10 border-r-4 co_alert ${formData.show ? "block bg-green-600" : "hidden"
                                     }`}
                                 onClose={() => setFormdata({ ...formData, show: false })}
-                            // dismissible
                             >
                                 {formData.alertmessage}
                             </Alert>
@@ -187,7 +193,6 @@ const ContactSection: React.FC = () => {
                                         onChange={handleChange}
                                     ></textarea>
                                 </div>
-
                                 <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover-bg-blue-500 focus-outline-none focus-ring focus-ring-blue-400 focus-ring-opacity-50" type="submit" >
                                     {formData.loading ? "Sending..." : "Get in touch"}
                                 </button>

@@ -818,8 +818,8 @@ video {
 .h-9 {
   height: 2.25rem;
 }
-.h-96 {
-  height: 24rem;
+.h-\[26rem\] {
+  height: 26rem;
 }
 .h-\[70px\] {
   height: 70px;
@@ -1266,6 +1266,9 @@ video {
 }
 .pt-14 {
   padding-top: 3.5rem;
+}
+.pt-20 {
+  padding-top: 5rem;
 }
 .pt-5 {
   padding-top: 1.25rem;
@@ -1741,8 +1744,8 @@ video {
     margin-bottom: 6rem;
   }
 
-  .md\:mb-8 {
-    margin-bottom: 2rem;
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
   }
 
   .md\:ml-10 {

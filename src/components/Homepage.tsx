@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Projects from './Projects';
 import RecentWork from './RecentWork';
 import Landing from './Landing';
@@ -11,6 +12,13 @@ import Faq from './Faq';
 
 
 const Homepage: React.FC = () => {
+  const [selectedPackage, setSelectedPackage] = useState('');
+
+  const handleContactSalesClick = (packageType: string) => {
+    // Handle the logic for "Contact Sales" button click
+    setSelectedPackage(packageType);
+  };
+
   return (
     <>
       <Navbar />
@@ -18,9 +26,9 @@ const Homepage: React.FC = () => {
       <Projects />
       <Services />
       <RecentWork />
-      <Pricing />
+      <Pricing onContactSalesClick={handleContactSalesClick} />
       <Faq />
-      <ContactSection />
+      <ContactSection starterPackage={selectedPackage} />
       <Footer />
     </>
   );
