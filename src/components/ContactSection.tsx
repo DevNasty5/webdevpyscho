@@ -1,5 +1,5 @@
 'use client';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Alert } from "react-bootstrap";
 import * as emailjs from "emailjs-com";
 
@@ -85,6 +85,16 @@ const ContactSection: React.FC<{ selectedPackage: string }> = (props) => {
         });
     };
 
+    useEffect(() => {
+        if (formData.show) {
+            const timeoutId = setTimeout(() => {
+                setFormdata({ ...formData, show: false });
+            }, 5000); // 5 seconds in milliseconds
+
+            // Clear the timeout when the component is unmounted or when formData.show changes
+            return () => clearTimeout(timeoutId);
+        }
+    }, [formData.show]);
 
     return (
         <section id="ContactUs" className="min-h-screen bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 md:m-16 md:p-10 mb-10 rounded-lg">

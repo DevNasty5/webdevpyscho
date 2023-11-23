@@ -1607,14 +1607,6 @@ video {
     gap: 1.25rem;
   }
 
-  .sm\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .sm\:overflow-x-scroll {
-    overflow-x: scroll;
-  }
-
   .sm\:p-12 {
     padding: 3rem;
   }
@@ -1782,10 +1774,6 @@ video {
     overflow: hidden;
   }
 
-  .md\:overflow-x-scroll {
-    overflow-x: scroll;
-  }
-
   .md\:p-10 {
     padding: 2.5rem;
   }
@@ -1934,10 +1922,6 @@ video {
 
   .lg\:items-center {
     align-items: center;
-  }
-
-  .lg\:overflow-x-hidden {
-    overflow-x: hidden;
   }
 
   .lg\:rounded-b-none {
