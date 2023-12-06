@@ -2,20 +2,20 @@
 import React, { useState } from "react";
 import "./style2.css";
 
-interface PricingProps {
-  onContactSalesClick?: (packageType: string) => void;
-}
+// interface PricingProps {
+//   onContactSalesClick?: (packageType: string) => void;
+// }
 
-const Pricing: React.FC<PricingProps> = (props) => {
-  const [selectedPackage, setSelectedPackage] = useState('');
+const Pricing: React.FC<{ onContactSalesClick: (packageType: string) => void }> = (props) => {
+  const [packageType, setPackageType] = useState('');
 
   const handleContactSalesClick = (packageType: string) => {
-    // Set the selected package in local state
-    setSelectedPackage(packageType);
+    // Set the selected packageType in local state
+    setPackageType(packageType);
 
-    // Invoke the onContactSalesClick prop with the selected package
+    // Invoke the onContactSalesClick prop with the selected packageType
     if (props.onContactSalesClick) {
-      props.onContactSalesClick(selectedPackage);
+      props.onContactSalesClick(packageType);
     }
     // Assuming "ContactUs" is an element with an id
     const contactUsElement = document.getElementById('ContactUs');
@@ -25,6 +25,7 @@ const Pricing: React.FC<PricingProps> = (props) => {
       contactUsElement.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
   const handleBookCall = () => {
     // Assuming "ContactUs" is an element with an id
     const contactUsElement = document.getElementById('ContactUs');

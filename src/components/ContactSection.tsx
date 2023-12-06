@@ -13,7 +13,7 @@ const contactConfig = {
     YOUR_TEMPLATE_ID: "template_dolm7jz",
     YOUR_USER_ID: "olHQTTcsNsAC5pyPS",
 };
-const ContactSection: React.FC<{ selectedPackage: string }> = (props) => {
+const ContactSection: React.FC<{ package: string }> = (props) => {
 
     const [formData, setFormdata] = useState({
         name: "",
@@ -31,9 +31,9 @@ const ContactSection: React.FC<{ selectedPackage: string }> = (props) => {
         setFormdata({ ...formData, loading: true });
 
         let messageContent = formData.message;
-        if (props.selectedPackage) {
-            // If the starterPackage prop is available, include it in the message
-            messageContent += `\n\nSelected Package Type: ${props.selectedPackage}`;
+        if (props.package) {
+            // If the Package prop is available, include it in the message
+            messageContent += `\n\nSelected Package Type: ${props.package}`;
         }
 
         const templateParams = {

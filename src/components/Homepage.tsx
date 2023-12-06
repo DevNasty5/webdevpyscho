@@ -28,7 +28,7 @@ const Homepage: React.FC = () => {
       <RecentWork />
       <Pricing onContactSalesClick={handleContactSalesClick} />
       <Faq />
-      <ContactSection selectedPackage={selectedPackage} />
+      <ContactSection package={selectedPackage} />
       <Footer />
     </>
   );
