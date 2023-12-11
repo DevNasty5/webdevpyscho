@@ -22,7 +22,7 @@ const Landing = () => {
 
         <div className="md:font-bold md:text-[70px] md:leading-[100px] text-4xl font-semibold leading-10 text-center md:text-left">
   <h2 className="mb-4 mt-4 md:mb-0">A dev <br className="md:hidden"/>agency with<br className="md:hidden"/> a twist</h2>
-  {/* Unleash Your Digital Potential, Pause-Play-Progress */}
+ 
 </div>
 
 

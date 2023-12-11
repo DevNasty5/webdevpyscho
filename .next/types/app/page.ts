@@ -1,4 +1,4 @@
-// File: /home/z3ro/DevDynasty/app/page.tsx
+// File: C:\Users\likhith reddy\Desktop\webdevpyscho\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
