@@ -20,10 +20,12 @@ const Landing = () => {
         <h1 className="font-semibold  md:text-2xl"> DevDynasty</h1>
         <div className="flex md:flex-row flex-col md:mt-12 mt-4 justify-between">
 
-          <div className="md:font-extrabold md:text-[80px] md:leading-[100px] text-4xl font-semibold leading-8 w-full ">
-            <h2 className="">A dev <br></br>agency with<br></br> a twist</h2>
-            {/* Unleash Your Digital Potential, Pause-Play-Progress */}
-          </div>
+        <div className="md:font-bold md:text-[70px] md:leading-[100px] text-4xl font-semibold leading-10 text-center md:text-left">
+  <h2 className="mb-4 mt-4 md:mb-0">A dev <br className="md:hidden"/>agency with<br className="md:hidden"/> a twist</h2>
+  {/* Unleash Your Digital Potential, Pause-Play-Progress */}
+</div>
+
+
           <div className=" flex justify-center items-center md:mt-0 mt-8 -right-6">
             <Image src={Phone} alt="header Image" className=" h-72">
 
