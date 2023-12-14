@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import Projects from './Projects';
+import Projects from './Cards';
 import RecentWork from './RecentWork';
 import Landing from './Landing';
 import Services from './Services'

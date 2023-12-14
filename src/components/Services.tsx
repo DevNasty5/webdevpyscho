@@ -6,7 +6,7 @@ import Icon from "../assets/Interneticon.svg"
 
 export function Card() {
   return (
-    <div className="bg-[#FFF7ED] h-full flex flex-col justify-center items-center md:p-12 p-2 md:m-20  m-4 rounded-lg md:my-40 my-5 mb-14">
+    <div className="bg-[#FFF7ED] h-full flex flex-col justify-center items-center md:p-12 p-2 md:mx-20  m-4 rounded-lg  mb-14">
       <Image src={Icon} alt="internet icon" className="absolute left-32 mb-72 -mt-14 hidden md:block">
 
       </Image>

@@ -133,6 +133,54 @@
   
   
   
+.img {
+  max-width: 300px;
+  height: 300px;
+  padding: 0 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img:last-of-type {
+  padding-left: 0;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+ 
+}
+
+.wrapper {
+  position: absolute;
+  display: flex;
+}
+
+.section {
+  display: flex;
+  animation: swipe var(--speed) linear infinite backwards;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+.image:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
 
     
     
