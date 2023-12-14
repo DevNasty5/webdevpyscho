@@ -13,9 +13,8 @@ const HorizontalScrollCards = () => {
     const numCards = cardData.length;
     const totalWidth = cardWidth * numCards;
 
-    // Check if the screen width is greater than or equal to a certain breakpoint
-    const isLargeScreen = window.innerWidth >= 768; // You can adjust the breakpoint as needed
-
+    const isClient = typeof window !== 'undefined';
+    const isLargeScreen = isClient && window.innerWidth >= 768;
     if (isLargeScreen) {
       gsap.registerPlugin(ScrollTrigger);
 

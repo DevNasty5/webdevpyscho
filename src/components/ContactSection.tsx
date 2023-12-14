@@ -97,8 +97,8 @@ const ContactSection: React.FC<{ package: string }> = (props) => {
     }, [formData.show]);
 
     return (
-        <section id="ContactUs" className="min-h-screen bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 md:m-16 md:p-10 mb-10 rounded-lg">
-            <div className="container flex flex-col min-h-screen px-6 py-4 mx-auto">
+        <section id="ContactUs" className="min-h-screen bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 md:m-16 md:p-10 mb-10 rounded-lg mx-4 ">
+            <div className="container flex flex-col min-h-screen px-4 py-4 mx-auto">
                 <div className="flex-1 lg:flex lg:items-center lg:-mx-6">
                     <div className="text-white lg:w-1/2 lg:mx-6">
                         <h1 className="text-2xl font-semibold capitalize lg:text-3xl">Contact for work</h1>

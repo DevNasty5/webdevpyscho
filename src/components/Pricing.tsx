@@ -41,10 +41,10 @@ const Pricing: React.FC<{ onContactSalesClick: (packageType: string) => void }> 
       id="pricing"
       className="bg-[#E1EAF4]  items-center justify-center  overflow-x-hidden md:pb-28 pb-8"
     >
-      <section className="relative overflow-hidden py-10">
+      <section className="relative overflow-hidden ">
         <div className="relative mx-auto max-w-7xl px-4">
           <div className="mx-auto md:mb-24 mb-6 max-w-2xl text-center lg:max-w-5xl">
-            <h1 className="md:mb-6 mb-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
+            <h1 className="md:mb-2 mb-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
               Membership Level
             </h1>
             <p className="text-lg text-gray-500">We got what suits you best!</p>
@@ -160,7 +160,10 @@ const Pricing: React.FC<{ onContactSalesClick: (packageType: string) => void }> 
                     </span>
                     <span className="text-sm font-semibold">/month</span>
                   </span> */}
-                  <div className="pt-20 border-t border-orange-500 ">
+                  <div className="pt-14 border-t border-orange-500 ">
+                  <span className="mb-2 block text-sm font-semibold text-gray-100">
+                    Have something else in mind?
+                  </span>
                     <div className="flex flex-col space-y-10">
                       {/* <a
                         href="#_"
@@ -172,6 +175,7 @@ const Pricing: React.FC<{ onContactSalesClick: (packageType: string) => void }> 
                           Refer a friend & earn
                         </span>
                       </a> */}
+                      
                       <a
                         href="#CS"
                         className="relative inline-block px-4 py-3 font-medium group text-center"
@@ -179,6 +183,7 @@ const Pricing: React.FC<{ onContactSalesClick: (packageType: string) => void }> 
                       >
                         <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-white group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                         <span className="absolute inset-0 w-full h-full bg-[#111827] border-2 border-white group-hover:bg-white"></span>
+                        
                         <span className="relative text-white text-xl group-hover:text-black text-center">
                           Book a call
                         </span>
@@ -188,13 +193,14 @@ const Pricing: React.FC<{ onContactSalesClick: (packageType: string) => void }> 
                       <div>
                         <span className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
                           <span className="w-48 h-48 rounded rotate-[-40deg] bg-[#3658C1] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                         
                           <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
                             What else?
                           </span>
                         </span>
                       </div>
                       <span className="flex items-end text-white mt-4">
-                        <span className="text-4xl mt-3 font-extrabold leading-none">
+                        <span className="text-4xl mt-3 justify-center text-center font-extrabold leading-none">
                           Web Solutions
                         </span>
                       </span>

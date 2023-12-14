@@ -61,7 +61,7 @@ const Faq: React.FC = () => {
 
   return (
     <div>
-      <section id='Faq' className="relative mx-auto max-w-7xl px-2 py-14 md:px-0">
+      <section id='Faq' className="relative mx-auto max-w-7xl px-4 py-14 md:px-0">
         <Image src={js} alt='js' className='absolute -top-40 -left-12 hidden md:block'>
 
         </Image>

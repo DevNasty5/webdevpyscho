@@ -115,6 +115,21 @@
     animation: popAndScale 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   }
+  .bg-linear-gradient-custom {
+    background-image: linear-gradient(rgb(17, 24, 39), rgb(75, 85, 99));
+  }
+  
+  
+  .gradient-text {
+    background-image: linear-gradient(rgb(229, 231, 235), rgb(156, 163, 175), rgb(75, 85, 99));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  
+  
+  
 
     
     

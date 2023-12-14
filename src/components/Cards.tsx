@@ -22,7 +22,7 @@ const Cards: React.FC = () => {
       {images.map((src, index) => (
         <div
           key={index}
-          className='max-w-md sm:w-96 md:h-96 m-4 p-2 hover:shadow-4xl place-self-center'
+          className='max-w-md sm:w-96 md:h-96 md:m-4 md:p-2 m-2 p-1 hover:shadow-4xl place-self-center'
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
