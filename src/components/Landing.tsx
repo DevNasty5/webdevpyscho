@@ -15,10 +15,10 @@ const Landing = () => {
   return (
     <div className="bg-[#eeebfe] h-full flex justify-center items-center md:my-20 m-6 mb-16 md:mx-36  rounded-lg shadow ">
       <div className="flex flex-col items-center p-10">
-        <h1 className="font-semibold  md:text-3xl"> A dev agency</h1>
+        <h1 className="font-semibold  md:text-3xl "> A dev agency</h1>
         <div className="flex md:flex-row flex-col md:mt-3  justify-between">
           <div className=" md:text-9xl md:leading-[100px] text-6xl font-semibold leading-10 text-center ">
-            <h2 className="mb-4 md:font-bold mt-4 md:mb-0">
+            <h2 className="mb-4 md:font-bold mt-4 md:mb-0 ">
               Dev<br></br> Dynasty
             </h2>
           </div>

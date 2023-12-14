@@ -97,7 +97,7 @@ const ContactSection: React.FC<{ package: string }> = (props) => {
     }, [formData.show]); // Include formData.show in the dependency array
     
     return (
-        <section id="ContactUs" className="min-h-screen bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 md:m-16 md:p-10 mb-10 rounded-lg mx-4 ">
+        <section id="ContactUs" className="min-h-screen bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 md:m-16 md:p-10 mb-10 rounded-lg mx-4 ">
             <div className="container flex flex-col min-h-screen px-4 py-4 mx-auto">
                 <div className="flex-1 lg:flex lg:items-center lg:-mx-6">
                     <div className="text-white lg:w-1/2 lg:mx-6">
