@@ -13,7 +13,7 @@ const Landing = () => {
     }
   };
   return (
-    <div className="bg-[#eeebfe] h-full flex justify-center items-center md:my-20 m-6 mb-16 md:mx-36  rounded-lg shadow ">
+    <div className="bg-[#eeebfe] h-full flex justify-center items-center md:my-20 m-4 mb-16 md:mx-36  rounded-lg shadow ">
       <div className="flex flex-col items-center p-10">
         <h1 className="font-semibold  md:text-3xl "> A dev agency</h1>
         <div className="flex md:flex-row flex-col md:mt-3  justify-between">
