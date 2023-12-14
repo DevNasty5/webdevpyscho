@@ -58,14 +58,14 @@ const RecentWork = () => {
                 <Image className="" src={trialshoppylogo} alt="" />
               </div>
               <p className="text-[18px] text-center">
-                <span className="text-[24px] mt-10">"</span>
+                <span className="text-[24px] mt-10">&quot;</span>
                 <strong>DevDynasty</strong> proved instrumental in elevating our e-commerce
                 platform, TrialShoppy, to new heights. Their innovative design
                 and seamless functionality integration have not only enhanced
                 our user experience but also significantly boosted our online
                 presence. We are immensely grateful for their expertise and
                 commend their commitment to excellence.
-                <span className="text-[24px]">"</span>
+                <span className="text-[24px]">&quot;</span>
                 
               </p>
             </div>
