@@ -18,8 +18,9 @@ const Landing = () => {
         <h1 className="font-semibold  md:text-3xl "> A dev agency</h1>
         <div className="flex md:flex-row flex-col md:mt-3  justify-between">
           <div className=" md:text-9xl md:leading-[100px] text-6xl font-semibold leading-10 text-center ">
-            <h2 className="mb-4 md:font-bold mt-4 md:mb-0 ">
+            <h2 className="mb-4 md:font-bold mt-4 md:mb-0 relative">
               Dev<br></br> Dynasty
+              <Image src={Phone} alt="code sign" className="absolute md:block hidden opacity-10 top-0 "></Image>
             </h2>
           </div>
         </div>
